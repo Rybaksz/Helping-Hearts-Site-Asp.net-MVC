@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="~/css/Contato.css">
+    <link rel="stylesheet" href="~/css/navbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">Helping Hearts</a>
+        <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </label>
+        <ul class="nav-list">
+            <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Sobre nós</a>
+            </li>
+            <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="contato">Contato</a>
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+    <div class="EnvieMsg">
+        <form>
+
+            <h1>Também é possível se comunicar conosco por e-mail.</h1>
+            <h2>Nós estamos disponíveis para sermos encontrados em nosso endereço.</h2>
+            <input type="text" class="input-field" placeholder="Seu nome">
+            <input type="email" class="input-field" placeholder="Seu email">
+            <input type="text" class="input-field" placeholder="Assunto">
+            <textarea class="input-field textarea-field" placeholder="Sua mensagem"></textarea>
+            <button type="button" class="btn">  Envie sua mensagem</button>
+        </form>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.053532511026!2d-46.77707244161439!3d-23.531539692026577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff0fcf72b7e1%3A0x4619c888290b360c!2sSenac%20Osasco!5e0!3m2!1spt-BR!2sbr!4v1676670601372!5m2!1spt-BR!2sbr" class="mapa"></iframe>
+
+    <img src="~/img/LogoNova.png" class="Imagem1">
+    <footer>
+        <p class="TextoCopy">© Copyright 2022 - Todos os direitos reservados </p>
+    </footer>
+</body>
+
+</html>

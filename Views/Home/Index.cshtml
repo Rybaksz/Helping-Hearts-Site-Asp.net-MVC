@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Helping Hearts</title>
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">Helping Hearts</a>
+        <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </label>
+        <ul class="nav-list">
+            <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Sobre nós</a>
+            </li>
+            <li>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="contato">Contato</a>
+            </li>
+
+   
+        </ul>
+
+    </nav>
+
+    <div id="Formulario">
+        <form>
+
+
+            <input type="text" placeholder="Login" id="login" required>
+            <br>
+            <input type="password" placeholder="Senha" id="senha">
+            <br>
+            <input type="submit" onclick="logar(); return false">
+            <br>
+            <br>
+            <a class="cor" href="Cadastro.html"> Clique para aqui para se cadastrar </a>
+
+        </form>
+        <script>
+
+
+            function logar() {
+                var login = document.getElementById('login').value;
+                var senha = document.getElementById('senha').value;
+
+                if (login == "admin" && senha == "admin") {
+                    alert('Sucesso');
+                    location.href = "@Url.Action("Index2", "Home")";
+                } else if (login == "admin3" && senha == "admin3") {
+                    alert('Sucesso');
+                    location.href = "@Url.Action("Create", "DoarOuRecebers")";
+                } else {
+                    alert('Usuario ou senha incorretos');
+                }
+            }
+
+        </script>
+    </div>
+
+    <img src="img/LogoNova.png" class="imagem">
+    <img src="img/Connected world (1).gif" class="imagem1">
+    <footer>
+        <p class="TextoCopy">© Copyright 2022 - Todos os direitos reservados </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Formulário */
+form {
+/*   Define a Altura  */
+  height: 200px;
+  /* Define uma largura de 200px */
+  width: 150px;
+  /* Centraliza o formulário na tela, deixando uma margem de 100px na parte superior e inferior */
+  margin: 70px auto;
+  /* Define uma cor de fundo cinza claro */
+  background-color: #9DD9D2;
+  /* Define uma margem interna de 80px */
+  padding: 80px;
+  /* Define uma borda arredondada com raio de 30px */
+  border-radius: 30px;
+  /* Centraliza o texto do formulário */
+  text-align: center;
+  /* Define a posição relativa do formulário */
+  position: relative;
+  /* Move o formulário 30% para a esquerda */
+  left: 30%;
+  /* Move o formulário 45% para a direita e 15%¨para baixo */
+ transform: translate(45%, 15%);  
+}
+
+/* Input de texto e senha */
+input[type="text"], input[type="password"] {
+  /* Define uma largura de 100% */
+  width: 100%;
+  /* Define uma margem interna de 10px */
+  padding: 10px;
+  /* Define uma margem inferior de 20px */
+  margin-bottom: 20px;
+  /* Remove a borda */
+  border: none;
+  /* Define uma borda arredondada com raio de 5px */
+  border-radius: 5px;
+  /* Define o tamanho da caixa de conteúdo */
+  box-sizing: border-box;
+  /* Define o tamanho da fonte */
+  font-size: 18px;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+  /* Define uma largura de 100% */
+  width: 100%;
+  /* Define uma margem interna de 10px */
+  padding: 10px;
+  /* Define uma cor de fundo preta */
+  background-color: #A0ECD0;
+  /* Define a cor da fonte branca */
+  color: #49393B;
+  /* Define uma borda arredondada com raio de 5px */
+  border-radius: 5px;
+  /* Remove a borda */
+  border: none;
+  /* Define o cursor como uma mão */
+  cursor: pointer;
+}
+
+/* Botão de envio hover */
+input[type="submit"]:hover {
+  /* Define uma cor de fundo escura */
+  background-color: #8AFFC1;
+}
+
+/* Classe cor */
+.cor {
+  /* Define uma cor preta */
+  color: #49393B;
+  /* Define o tamanho da fonte */
+  font-size: 15px;
+  /* Centraliza o texto */
+  text-align: center;
+  /* Define como um bloco */
+  display: block;
+  
+}
+
+
+
+body{
+  
+  background-color: #fff8f0;
+  overflow-x: hidden;
+overflow-y: hidden;
+}
+/*  #FFF8F0 cor background   */
+
+
+/*Muda as Configuraçoes da Logo  */
+.imagem{
+transform: translate(-15%, 30%);
+  
+  display: flex;
+  position: absolute;
+}
+.imagem1{
+  width: 30%;
+transform: translate(60%, -75%);
+  
+  display: flex;
+  position: absolute;
+}
+
+.TextoCopy{
+  transform: translate(10%, 270px);
+  
+  display: flex;
+  position: absolute;
+  
+}

@@ -1,0 +1,116 @@
+﻿@model TRABALHOFINALDOPI.Models.DoarOuReceber
+
+@{
+    ViewData["Title"] = "Create";
+}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cadastro</title>
+    <link href="~/css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/Cadastro.css" rel="stylesheet" type="text/css" />
+</head>
+<nav class="navbar">
+    <a href="/" class="logo">Helping Hearts</a>
+    <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </label>
+    <ul class="nav-list">
+        <li>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"></a>
+        </li>
+        <li>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"></a>
+        </li>
+        <li>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="contato"></a>
+        </li>
+
+
+    </ul>
+
+</nav>
+<hr />
+<div class="box">
+    <form asp-action="Create">
+        <fieldset>
+            <legend>Formulário de cadastro</legend>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group inputBox">
+                <input asp-for="Nome" class="inputUser" required />
+                <label class="labelInput">Nome</label>
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <br />
+            <br />
+            <div class="form-group inputBox">
+                <input asp-for="Sobrenome" class="inputUser" required />
+                <label class="labelInput">Sobrenome</label>
+                <span asp-validation-for="Sobrenome" class="text-danger"></span>
+            </div>
+            <br />
+            <br />
+            <div class="form-group inputBox">
+                <input asp-for="Email" class="inputUser" required />
+                <label class="labelInput">E-mail</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <br />
+            <br />
+            <div class="form-group inputBox">
+                <input asp-for="Celular" class="inputUser" required />
+                <label class="labelInput">Celular</label>
+                <span asp-validation-for="Celular" class="text-danger"></span>
+            </div>
+            <br />
+            <br />
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="QuerDoar" /> @Html.DisplayNameFor(model => model.QuerDoar)
+                </label>
+            </div>
+            <br />
+            <br />
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="QuerReceber" /> @Html.DisplayNameFor(model => model.QuerReceber)
+                </label>
+            </div>
+            <br />
+            <br />
+            <div class="form-group inputBox">
+                <input asp-for="DataPedido" class="inputUser" id="data_nascimento" required />
+                <label class="labelInput">Data de pedido</label>
+                <span asp-validation-for="DataPedido" class="text-danger"></span>
+            </div>
+            <br />
+            <br />
+            <div class="form-group">
+                <label asp-for="PedidoId" class="control-label"></label>
+                <select asp-for="PedidoId" class="form-control" asp-items="ViewBag.PedidoId"></select>
+            </div>
+            <br />
+            <br />
+            <div class="form-group">
+                <label asp-for="OngId" class="control-label"></label>
+                <select asp-for="OngId" class="form-control" asp-items="ViewBag.OngId"></select>
+            </div>
+            <br />
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Criar" id="submit" />
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<footer>
+    <img src="~/img/LogoNova.png"  class="Imagem">
+    <p class="TextoCopy"> © Copyright 2022 - Todos os direitos reservados </p>
+</footer>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

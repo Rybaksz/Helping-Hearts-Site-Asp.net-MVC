@@ -1,0 +1,125 @@
+
+
+/*Define uma regra para todos os elementos da página, zerando suas margens e preenchimentos.  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Define uma regra para os links na página, definindo a cor do texto, sem decoração e adicionando uma transição.  */
+a {
+  color: #49393B;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Define uma regra para os links na página quando o mouse passa por cima, alterando a opacidade */
+
+a:hover {
+  opacity: 0.7;
+}
+/*Define uma regra para a classe "logo" na página, definindo a fonte do texto, seu tamanho, transformação em maiúsculas e espaçamento entre as letras.  */
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+/*Define uma regra para a tag "nav" na página, definindo seu display como flex, alinhamento dos itens, família da fonte, cor de fundo e altura.  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #9DD9D2;
+  height: 8vh;
+}
+/*Define uma regra para a tag "main" na página, definindo a imagem de fundo, posição e tamanho.  */
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+/*Define uma regra para a classe "nav-list" na página, definindo que a lista não terá marcadores e será exibida em formato flexível.  */
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+/*Define uma regra para os elementos "li" dentro da classe "nav-list", definindo o espaçamento entre as letras e a margem à esquerda.  */
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+/*Define uma regra para a classe "mobile-menu" na página, definindo que ela não será exibida e que o cursor terá formato de ponteiro. Em seguida, define uma regra para as divs dentro da classe "mobile-menu", definindo sua largura, altura, cor de fundo, margem e transição.  */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px; /* define a largura do elemento div com a classe mobile-menu */
+  height: 2px; /* define a altura do elemento div com a classe mobile-menu */
+  background: #fff; /* define a cor de fundo do elemento div com a classe mobile-menu */
+  margin: 8px; /* define as margens do elemento div com a classe mobile-menu */
+  transition: 0.3s; /* define a duração da transição para animação do elemento div com a classe mobile-menu */
+}
+
+@media (max-width: 999px) { /* define as propriedades CSS para telas com largura máxima de 999px */
+  body {
+    overflow-x: hidden; /* esconde a barra de rolagem horizontal da página */
+  }
+  .nav-list {
+    position: absolute; /* define a posição do elemento com a classe nav-list como absoluta */
+    top: 8vh; /* define a distância da parte superior do elemento nav-list em relação ao topo da página */
+    right: 0; /* define a distância da parte direita do elemento nav-list em relação à borda direita da página */
+    width: 50vw; /* define a largura do elemento nav-list em 50% da largura da viewport */
+    height: 92vh; /* define a altura do elemento nav-list em 92% da altura da viewport */
+    background: #23232e; /* define a cor de fundo do elemento nav-list */
+    flex-direction: column; /* define o layout flex do elemento nav-list com a direção das colunas */
+    align-items: center; /* centraliza os itens filhos horizontalmente dentro do elemento nav-list */
+    justify-content: space-around; /* distribui igualmente o espaço restante entre os itens filhos do elemento nav-list */
+    transform: translateX(100%); /* move o elemento nav-list para a direita, fora da viewport */
+    transition: transform 0.3s ease-in; /* define a duração e o tipo de transição para animação do elemento nav-list */
+  }
+  .nav-list li {
+    margin-left: 0; /* remove a margem esquerda dos itens filhos do elemento nav-list */
+    opacity: 0; /* define a opacidade dos itens filhos do elemento nav-list como 0, tornando-os invisíveis */
+  }
+  .mobile-menu {
+    display: block; /* exibe o elemento com a classe mobile-menu */
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0); /* move o elemento nav-list para a esquerda, para dentro da viewport */
+}
+
+@keyframes navLinkFade { /* define a animação para os links no menu */
+  from {
+    opacity: 0; /* define a opacidade inicial dos links como 0, tornando-os invisíveis */
+    transform: translateX(50px); /* move os links 50 pixels para a direita */
+  }
+  to {
+    opacity: 1; /* define a opacidade final dos links como 1, tornando-os visíveis */
+    transform: translateX(0); /* move os links de volta para a posição original */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+/*   faz com que a linha seja girada em -45 graus e movida 8 pixels para a esquerda e 8 pixels para baixo. */
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+/*   faz com que a linha fique completamente transparente. */
+}
+
+/*  faz com que a linha seja girada em 45 graus e movida 5 pixels para a esquerda e 7 pixels para cima. */
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}

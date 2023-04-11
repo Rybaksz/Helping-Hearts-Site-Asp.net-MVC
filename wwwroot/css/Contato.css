@@ -1,0 +1,96 @@
+/* Define as configurações do formulário de envio de mensagem */
+.EnvieMsg {
+max-width: 800px;
+margin: 0 auto;
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+transform: translateX(90%); /* Adiciona a propriedade transform para alinhar os elementos no canto direito */
+}
+
+/* Define as configurações dos campos de entrada (input e textarea) */
+.input-field, .textarea-field {
+width: 50%;
+padding: 10px;
+margin: 10px 0;
+border: none;
+border-radius: 5px;
+background-color: #f2f2f2;
+}
+
+/* Define as configurações específicas do campo textarea */
+.textarea-field {
+height: 150px;
+}
+
+/* Define as configurações do botão de envio */
+.btn {
+width: 40%;
+padding: 10px;
+margin-top: 20px;
+border: none;
+border-radius: 5px;
+background-color: #9DD9D2;
+color: #fff;
+font-size: 1.2rem;
+cursor: pointer;
+transition: all 0.3s ease;
+height: 10%;
+bottom: -5%;
+right: 47%;
+display: flex;
+position: absolute;
+text-align: center;
+}
+
+/* Define as configurações gerais da página */
+body {
+background-color: #fff8f0;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+/* Define as configurações do título principal */
+h1 {
+text-align: center;
+font-size: 1.1rem;
+margin-top: 80px;
+margin-left: -360px;
+color: #49393B;
+}
+
+/* Define as configurações do subtítulo */
+h2 {
+position: absolute;
+top: 70px;
+left: 51%;
+transform: translateX(-350%);
+font-size: 1.3rem;
+color: #49393B;
+}
+
+/* Define as configurações do mapa */
+.mapa {
+width: 600px;
+height: 450px;
+margin-top: -500px;
+margin-left: 200px;
+box-shadow: 5px 5px #e0dcdc;
+}
+
+/* Define as configurações da imagem 1 */
+.Imagem1{
+width: 32%;
+transform: translate(-10%, 3%);
+display: flex;
+position: absolute;
+}
+
+/* Define as configurações do texto de direitos autorais */
+.TextoCopy{
+transform: translate(26%, 1200%);
+display: flex;
+position: absolute;
+}

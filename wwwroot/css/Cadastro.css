@@ -1,0 +1,132 @@
+/* Define margem e padding zero para todos os elementos HTML */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Define a cor e transição de link e remove a decoração padrão */
+a {
+  color: #49393B;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Define a opacidade ao passar o mouse sobre o link */
+a:hover {
+  opacity: 0.7;
+}
+
+/* Define o estilo da caixa de login */
+.box{
+  position: absolute;
+  top: 50%;
+  left: 83%;
+  transform: translate(-50%,-50%);
+  background-color: #9DD9D2;
+  padding: 30px;
+  border-radius: 20px;
+  width: 25%;
+}
+
+
+/* Remove a borda do fieldset */
+fieldset{
+  border: 0px solid #6de8da;
+}
+
+/* Define o estilo da legenda */
+legend{
+  border: 8px solid #6de8da;
+  padding: 10px;
+  text-align: center;
+  background-color: #6de8da;
+  border-radius: 8px;
+}
+
+/* Define a posição relativa do elemento pai do input */
+.inputBox{
+  position: relative;
+}
+
+/* Define o estilo do input do usuário */
+.inputUser{
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: #49393B;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 3px;
+}
+
+/* Define a posição absoluta do labelInput e remove o evento do ponteiro */
+.labelInput{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+/* Define a posição do labelInput ao focar ou validar o input */
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+  top: -20px;
+  font-size: 1px;
+  color: #50e2d9;
+}
+
+
+/* Define o estilo do campo de data de nascimento */
+#data_nascimento{
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Define o estilo do botão de envio */
+#submit{
+  background-image: linear-gradient(45deg, #2ce8d2,#28e6c6);
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: #49393B;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Define o estilo do botão de envio ao passar o mouse */
+#submit:hover{
+  background-image: linear-gradient(45deg, #2ce8d2,#28e6c6);
+}
+
+/* Define a cor de fundo e oculta as barras de rolagem vertical e horizontal do corpo da página */
+body{
+  background-color: #fff8f0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Define a cor de texto para legend, b, label e p */
+legend, b, label, p {
+    color: #49393B;
+    padding: 15px;
+}
+
+
+
+
+/* Define o estilo da primeira imagem */
+.Imagem {
+
+
+    width: 32%;
+    
+    display: flex;
+    position: absolute;
+}
+

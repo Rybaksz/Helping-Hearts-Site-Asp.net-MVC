@@ -1,0 +1,16 @@
+.imagem{
+transform: translate(-15%, 240%);
+  
+  display: flex;
+  position: absolute;
+}
+
+}
+body{
+  background-color: #fff8f0;
+}
+.TextoCopy{
+transform: translate(10%, 850px);
+display: flex;
+position: absolute;
+}

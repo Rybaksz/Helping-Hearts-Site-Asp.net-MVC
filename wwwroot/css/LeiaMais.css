@@ -1,0 +1,40 @@
+/* Define a cor de fundo do corpo da página */
+body{
+background-color: #fff8f0;
+}
+
+/* Define o estilo de posicionamento, tamanho e transformação de uma imagem */
+.Imagem{
+width: 32%;
+transform: translate(200%, -30%);
+display: flex;
+position: absolute;
+}
+
+/* Define o estilo de posicionamento, tamanho e transformação de outra imagem */
+.Imagem1{
+width: 32%;
+transform: translate(-10%, 150%);
+display: flex;
+position: absolute;
+}
+
+/* Define o estilo de posicionamento, tamanho e transformação de mais uma imagem */
+.Imagem{
+width: 32%;
+transform: translate(200%, -10%);
+display: flex;
+position: absolute;
+}
+
+/* Define o estilo de posicionamento, tamanho e transformação de um texto */
+.TextoCopy{
+transform: translate(26%, 2800%);
+display: flex;
+position: absolute;
+}
+
+/* Define a cor do texto de títulos e parágrafos */
+h1, p{
+color: #49393B;
+}
